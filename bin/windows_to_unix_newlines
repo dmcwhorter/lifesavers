@@ -1,0 +1,9 @@
+#!/bin/bash
+
+file="$1"
+#echo "$file"
+tempfile="$file.tmp"
+#echo "$tempfile"
+tr '' '\n' < "$file" > "$tempfile"
+mv "$tempfile" "$file"
+
